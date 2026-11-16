@@ -1,0 +1,52 @@
+[
+  {
+    "source": "ESS_Tukey_BPCA_CSSP_Revised_Full_20261003/repro/frozen_matlab/SU_FROZEN.m",
+    "bundled": "frozen/SU_FROZEN.m",
+    "sha256": "934d679ff3554815331b0bbd0aa3f151653af56d4a9482024ca00cf0fcb162f9"
+  },
+  {
+    "source": "ESS_Tukey_BPCA_CSSP_Revised_Full_20261003/repro/frozen_matlab/SU_SYN_FROZEN.m",
+    "bundled": "frozen/SU_SYN_FROZEN.m",
+    "sha256": "34722f1a9136b88a1b287671dad7ba5b048f506bbbd908aa6828eb138711e073"
+  },
+  {
+    "source": "ESS_Tukey_BPCA_CSSP_Revised_Full_20261003/repro/frozen_matlab/SU_STATE.m",
+    "bundled": "frozen/SU_STATE.m",
+    "sha256": "b23d7386d476a3d2a1f34a745698c8450f9d940e0dc6ecde2f247e5328d433ab"
+  },
+  {
+    "source": "ESS_Tukey_BPCA_CSSP_Revised_Full_20261003/repro/frozen_matlab/SU_SOLVER.m",
+    "bundled": "frozen/SU_SOLVER.m",
+    "sha256": "96c2e9889dd93f1ed6f6c42b1d9bfc6875784b086d643b499c34c83b3a4a5f6c"
+  },
+  {
+    "source": "ESS_Tukey_BPCA_CSSP_Revised_Full_20261003/repro/frozen_matlab/SU_WEIGHT_METRICS.m",
+    "bundled": "frozen/SU_WEIGHT_METRICS.m",
+    "sha256": "773e930492332691a380f9f0165d08ceefc728d4e038ef2b4f504055ee628d12"
+  },
+  {
+    "source": "ESS_Tukey_BPCA_CSSP_Revised_Full_20261003/repro/frozen_matlab/SU_UTIL.m",
+    "bundled": "frozen/SU_UTIL.m",
+    "sha256": "691c7c97c9ded8e81d272a3596a15c54a4d69874f2b13b7f26fe5a52f7d3fc77"
+  },
+  {
+    "source": "ESS_Tukey_BPCA_CSSP_Revised_Full_20261003/repro/frozen_matlab/SU_DATA.m",
+    "bundled": "frozen/SU_DATA.m",
+    "sha256": "f93b69666ed78c690da350aab0ccc79cad0b2d6ad339c744fe00f2610dc4c308"
+  },
+  {
+    "source": "ESS_Tukey_BPCA_CSSP_Revised_Full_20261003/repro/frozen_matlab/SU_CASE.m",
+    "bundled": "frozen/SU_CASE.m",
+    "sha256": "d22a34e3d2249c377d35a50bb12bb35b340df1735198f51a6c50bf491f6a4f99"
+  },
+  {
+    "source": "ESS_Tukey_BPCA_CSSP_Revised_Full_20261003/repro/frozen_matlab/SU_CSV.m",
+    "bundled": "frozen/SU_CSV.m",
+    "sha256": "1b0cab2fde67794cc8509f839b9b774c3c0c4af43dfc3a4375c08c5ec30204ce"
+  },
+  {
+    "source": "ESS_Tukey_BPCA_CSSP_Revised_Full_20261003/repro/frozen_matlab/vendor/TC_PROTOCOL.m",
+    "bundled": "frozen/TC_PROTOCOL.m",
+    "sha256": "cf348f9842c15c57f7929e25ce41bc4a75cec604cab13643c03af8dfdfd26998"
+  }
+]

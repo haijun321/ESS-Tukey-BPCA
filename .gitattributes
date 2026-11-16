@@ -1,0 +1,6 @@
+# Keep scientific source and exported CSV bytes unchanged across platforms.
+# Changing line endings changes the source hashes used by resumed fits.
+* -text
+*.png binary
+*.pdf binary
+*.mat binary

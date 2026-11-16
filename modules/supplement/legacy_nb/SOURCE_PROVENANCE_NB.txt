@@ -1,0 +1,17 @@
+Package: NB-SUPPLEMENT-V2-FIX1, 2026-11-06
+Original user-source: Tukey_CSSP_P0_V2_FINAL_20261031.zip
+Bundled original driver/math/state/generator code is under vendor/.
+NB_SOLVER_TRACE is an instrumented clone of P0_SOLVER_V2; it stores bases and
+memory without evaluating probe data during optimization.
+RA-2DPCA is a MATLAB port of the author's R recurrence, not official MATLAB.
+See external/RA_PROVENANCE.txt for commit and numerical-validation scope.
+The new experiments use fixed iteration limits with no wall-clock stopping.
+They are separate experiment records, not replacements for legacy results.
+V1 user MATLAB logs established engineering selftests passed and data paths
+were missing for real tasks. V2 adds dependency readiness, explicit task scopes,
+location-only settings, training-only RA activation diagnostics and honest
+degenerate-baseline statuses. Healthy RA recurrence is unchanged; exact zero
+weight/covariance returns the current basis with a dedicated diagnostic label.
+No scientific fits or claims of improved accuracy were fabricated or run here.
+FIX1: initialize NB_PREFLIGHT result caches with explicit Ready/Reason schema;
+add valid COIL cache reuse and empty-plan regression tests. Fits are unchanged.

@@ -1,0 +1,51 @@
+{
+  "date": "2026-11-16",
+  "matlab_source_files": 192,
+  "matlab_static_parser": {
+    "tool": "MISS_HIT 0.9.44",
+    "files": 192,
+    "pass": true
+  },
+  "native_matlab_executed": false,
+  "native_r_executed": false,
+  "scientific_model_fits_executed_in_packaging": 0,
+  "csv_source_integrity": {
+    "pass": true,
+    "scope": "Source-byte integrity and exported-record consistency only",
+    "retained_files_checked": 352,
+    "sample_source_hashes_checked": 47,
+    "sample_formal_records": 80,
+    "sample_statuses": {
+      "timecap": 79,
+      "budget_exhausted": 1
+    },
+    "sample_subspace_reduction_percent": {
+      "CaseOnly": 5.308940299829153,
+      "Mixed": 4.038774833263154
+    },
+    "matlab_executed": false,
+    "scientific_fits_executed": 0,
+    "notice": "This check does not replay raw arrays, model bases or optimization traces."
+  },
+  "python_figure_and_table_pipeline": {
+    "command": "python analysis/reproduce.py --mode all",
+    "exit_code": 0,
+    "python": "3.12.14",
+    "versions": {
+      "numpy": "2.3.5",
+      "pandas": "2.2.3",
+      "matplotlib": "3.10.8"
+    },
+    "main_figures_generated": 4,
+    "sample_weight_figure_generated": true
+  },
+  "missing_relative_markdown_links": [],
+  "scientific_scope": "Source-preserving packaging, static parsing and exported-record/figure reanalysis; not independent replay of all research fits.",
+  "public_bundle_scan": {
+    "internal_file_service_ids_found": 0,
+    "github_token_like_strings_found": 0,
+    "raw_face_images_included": false,
+    "gitignore_behavior_checked": true,
+    "source_fixture_and_csv_evidence_not_ignored": true
+  }
+}

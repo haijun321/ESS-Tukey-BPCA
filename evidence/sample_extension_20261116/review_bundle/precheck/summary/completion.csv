@@ -1,0 +1,9 @@
+Phase,Condition,Method,PlannedFits,ObservedFits,CompleteFits,FailedFits,MissingFits
+precheck,Clean,E,1,1,1,0,0
+precheck,Clean,ES,1,1,1,0,0
+precheck,CellOnly,E,1,1,1,0,0
+precheck,CellOnly,ES,1,1,1,0,0
+precheck,CaseOnly,E,1,1,1,0,0
+precheck,CaseOnly,ES,1,1,1,0,0
+precheck,Mixed,E,1,1,1,0,0
+precheck,Mixed,ES,1,1,1,0,0

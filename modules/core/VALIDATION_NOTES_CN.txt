@@ -1,0 +1,40 @@
+代码交付验证说明
+
+本交付环境没有 MATLAB 或 Octave，未执行正式合成拟合或人脸数据拟合。
+MATLAB selftest、quick 与归档接口试跑需要在作者环境中执行。
+本包没有实验结果表或预制性能数字。
+
+validation/verify_mathematics.py 独立复核了同一数学公式与工程逻辑：
+1. 五十次随机方向导数检查，最大缩放误差 2.0303509984387347e-09。
+2. 五十次基旋转不变性检查，最大相对 Q 误差 2.674039383782931e-16。
+3. Tukey/Huber/Welsch/L2 及 guard 分支共 240 次条件上界检查，零违反。
+4. guard 的 F=Qcode/2，最大浮点误差 1.4210854715202004e-14。
+5. 八次投影梯度回溯检查，以及一个未成功搜索保留失败标记的工程例。
+6. 非加权损失与加权 Q 冲突的确定性工程例、精确 sign-flip、零权重边界语义。
+7. 十个冻结依赖文件的 SHA256 与原包一致。
+8. 二十六个新增 MATLAB 文件的词法、块结构和主函数命名检查未发现问题。
+
+FIX1 增加旧版真实训练调用路径的配置字段核查：递归覆盖 37 个冻结函数，
+除已由 isfield 保护的一个可选字段外，工程回放提供全部引用的 alg 字段。
+记忆模式与冻结配置均为 'max'；删除该字段的负例能重现并检出本次遗漏。
+该核查仍为静态检查，不能代替作者环境中的 MATLAB selftest。
+
+Python 数学复核不是 MATLAB 编译证明；词法检查不是 MATLAB Code Analyzer。
+随机小矩阵及工程反例不能写入论文作为正式数据实验。
+LOCAL_VALIDATION_REPORT.json 明确标记 MATLABExecuted/ScientificFitsExecuted=false。
+
+作者环境建议顺序：
+START_TUKEY_CSSP_P0_V2('selftest',opts);
+START_TUKEY_CSSP_P0_V2('quick',opts);
+START_TUKEY_CSSP_P0_V2('real_preflight',opts);
+START_TUKEY_CSSP_P0_V2('real_pilot',opts);
+
+可另外对新增文件运行 MATLAB Code Analyzer：
+files = dir('P0_*.m');
+files(end+1) = dir('START_TUKEY_CSSP_P0_V2.m');
+for k = 1:numel(files)
+    checkcode(fullfile(files(k).folder,files(k).name));
+end
+
+如 selftest 或 quick 报错，保留完整异常文本和所在函数；不要绕过 assert 后继续正式实验。
+正式结果以完成的计划、记录签名、数值审计和实际恢复指标为准，不能由代码交付推断。

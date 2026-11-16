@@ -1,0 +1,441 @@
+{
+  "pass": true,
+  "scope": "MATLAB_static_parsing_and_lexical_symbol_presence_only",
+  "matlab_executed": false,
+  "r_executed": false,
+  "r_parser_executed": false,
+  "scientific_experiments_executed": false,
+  "tool": "MISS_HIT 0.9.44",
+  "checked_at_utc": "2026-11-15T03:55:29.145349+00:00",
+  "matlab_file_count": 106,
+  "parser_exit_code": 0,
+  "findings": {},
+  "primary_function_filename_mismatches": [],
+  "unresolved_named_CSSP_calls": [],
+  "source_snapshot": [
+    {
+      "file": "CHECK_CSSP_READY.m",
+      "sha256": "51be287d82c105bf9ee2c0f9bfb292b25ca8d765e331a9bca581b13851b67003"
+    },
+    {
+      "file": "CSSP_EXTERNAL.m",
+      "sha256": "6cea89ea4f5fa4c06696f12e0169e3deaf6c858adf6774fc5cbad9c34aca38dd"
+    },
+    {
+      "file": "CSSP_EXTERNAL_CHECK.m",
+      "sha256": "388a5142bb73e90ea237dc3ba2a70fbf7d360a1b7499530c6079a2e511c4c6d9"
+    },
+    {
+      "file": "CSSP_FIT_NATIVE.m",
+      "sha256": "362e44cddd47afb50ecf7eccce97a43eeea043be43d9a1c78cb9c97a53f1588d"
+    },
+    {
+      "file": "CSSP_IMPORT_PRIOR.m",
+      "sha256": "f0bf4da43619858e2194d35442f29ddf9138908fc86318fbbc88c0affc1972b1"
+    },
+    {
+      "file": "CSSP_IMPORT_SELFTEST.m",
+      "sha256": "ac20f30a7e20f9245b5bd544acda25d71b863311ec523affdc50987d00b3e530"
+    },
+    {
+      "file": "CSSP_JOBS.m",
+      "sha256": "dd4b88de70ad22b1e953589193cce1adc4cd2ee01313c78e1577dee480dff891"
+    },
+    {
+      "file": "CSSP_MECHANISM.m",
+      "sha256": "99901489a068c562c08e06304eb082c84cef31d25c156485ee8de871df56d2e6"
+    },
+    {
+      "file": "CSSP_RUN.m",
+      "sha256": "2f4b26a8698a79a1461b8bece785ca013f8287323beb753f575dee2a8f95340e"
+    },
+    {
+      "file": "CSSP_SELECTION.m",
+      "sha256": "e79daa20fa7826af36680000fa8574ce08fadb4311b9ea1ea88028e088b79e56"
+    },
+    {
+      "file": "CSSP_SELFTEST.m",
+      "sha256": "f746e57323b1593c6399858eac34da4c354ce67021353eb8b9ae5dd71b4cd724"
+    },
+    {
+      "file": "CSSP_SETUP.m",
+      "sha256": "ccee891dd04ea14210a9dcbd76e35501c41dd98bc325fd43a02eaa6789dd5f0b"
+    },
+    {
+      "file": "CSSP_SETUP_ROMPCA.m",
+      "sha256": "da3aca380526259a2263719b3c18db92b11c385dd8e14f0aee3a96494c28226b"
+    },
+    {
+      "file": "CSSP_SOURCE.m",
+      "sha256": "efefc816d0f0e2cf0ed700a6dca3a8cf255f16abe9ecc3749f12d2e93eced5a1"
+    },
+    {
+      "file": "CSSP_SUMMARIZE.m",
+      "sha256": "02c171b568cd46d8420d47f168bf4ad8aba24a77aeb9d38976fa750af7f6a114"
+    },
+    {
+      "file": "CSSP_SUMMARY_SELFTEST.m",
+      "sha256": "b4d43b8da97f25374637df867dc2d92190b5db367992f98f251be7ebe195b309"
+    },
+    {
+      "file": "CSSP_USER_CONFIG.m",
+      "sha256": "ab314f2849f2148603fada650610328183dd4833e9279b69bcb0f4be6a4c5e6b"
+    },
+    {
+      "file": "RUN_CSSP_PILOT.m",
+      "sha256": "719a0fa25c10a8f58c27aee8535454ad624a2a22092fa030c0a4fe9f0b083c20"
+    },
+    {
+      "file": "RUN_CSSP_SUMMARY.m",
+      "sha256": "bf7d783666e34bd9a006bb596a8ebc86f812f5732fd9e2599503e2cf139e5a15"
+    },
+    {
+      "file": "RUN_CSSP_SUPPLEMENT.m",
+      "sha256": "50d825c7a26f9126a15dc5b0f67d2f72daa4f50ea46321588b5f049ab2e68b36"
+    },
+    {
+      "file": "legacy_nb/CHECK_READY.m",
+      "sha256": "b68b4176b4eeb65c12f869360cc5ade7ac061f33b2658dcb50d58427f6bb000c"
+    },
+    {
+      "file": "legacy_nb/NB_BOOTSTRAP.m",
+      "sha256": "04f4ccc0bb2714b37bca1c4a5baa83e49d94198ea6666491927fff35ac22efa1"
+    },
+    {
+      "file": "legacy_nb/NB_CASE.m",
+      "sha256": "f48daca6d1425b0144ad1815404dce795da533b7f851005b8a353befb8965d11"
+    },
+    {
+      "file": "legacy_nb/NB_COIL_CASE.m",
+      "sha256": "122837d47229d02c1030feb9f25a96c585a1db610d07774cbf2c33a483f16bb5"
+    },
+    {
+      "file": "legacy_nb/NB_COIL_SELFTEST.m",
+      "sha256": "4ce9bf3e9474d23d49604589304ce37b1e93b8a6e3fd2c73382fed7674915bed"
+    },
+    {
+      "file": "legacy_nb/NB_CONFIG.m",
+      "sha256": "b93aba0b53ce3de972c269fb3a678eea8f410194f49ebdf87cb56928545877c1"
+    },
+    {
+      "file": "legacy_nb/NB_CONTROL_SELFTEST.m",
+      "sha256": "466dba6d25d8438fb937e2fc3f871008d3d0a6d77ff45b47922bc763af4592d4"
+    },
+    {
+      "file": "legacy_nb/NB_DIMENSION_PAIR.m",
+      "sha256": "313a128722b12665d385137473f28d6447687835c3e95aab77815c8c132b6f91"
+    },
+    {
+      "file": "legacy_nb/NB_DIMENSION_SELFTEST.m",
+      "sha256": "55baaacece8916f46f0a1a300e155f2fa93d353321366aac1fc66dc7fb5a2735"
+    },
+    {
+      "file": "legacy_nb/NB_EVALUATE.m",
+      "sha256": "1599d5297e5c8a233603b67456d7da9f97429f0d6aba3717abeeb0922df3bb3c"
+    },
+    {
+      "file": "legacy_nb/NB_FIND_ARCHIVE.m",
+      "sha256": "20b2ceaeb9f74cbf0f1c6138b558015077b739204502b07cda28a99d3ceef9ce"
+    },
+    {
+      "file": "legacy_nb/NB_FIT.m",
+      "sha256": "e28cc2c9bcf87c66178587aaed610613913744ed0853215a92732bc179cba855"
+    },
+    {
+      "file": "legacy_nb/NB_FIT_SIGNATURE.m",
+      "sha256": "19827551da1d0b3325f5ca8867fe12432f2a16b2ca2388d8c3a7201094287ed6"
+    },
+    {
+      "file": "legacy_nb/NB_JOBS.m",
+      "sha256": "9a3f5937e2703cc10d24b33c289c42da62a8d2a0c43cefe6ba02458f059868c6"
+    },
+    {
+      "file": "legacy_nb/NB_LOCAL_PATHS.m",
+      "sha256": "6eb1334fa2fbaf31aaffdd352089cf725fab37428803e3f4a8776e1f4d3fac05"
+    },
+    {
+      "file": "legacy_nb/NB_MECHANISM.m",
+      "sha256": "ae92f4005443c73c8c573620a5f419c9e09c726abd80dd0830e0d95918c72065"
+    },
+    {
+      "file": "legacy_nb/NB_NATIVE_METHOD.m",
+      "sha256": "c76b9d4285a877210357eca6d00b778db5598f6083650345bc2a897e9b647eb2"
+    },
+    {
+      "file": "legacy_nb/NB_PAPER_GATE.m",
+      "sha256": "29be6a06e4a8953ddf9a11fa41ec59d14b830d5751b4ce8d094887b5ac0113c0"
+    },
+    {
+      "file": "legacy_nb/NB_PATHS_SELFTEST.m",
+      "sha256": "424c02875c930a0b078a2405cf867cc2d6acec09ef346ae721b3b0d5d13813e8"
+    },
+    {
+      "file": "legacy_nb/NB_PIPELINE_SELFTEST.m",
+      "sha256": "975a8856f61645c101692311f9c4551890bb7ce1957815ad70d7e87107a81c29"
+    },
+    {
+      "file": "legacy_nb/NB_PLOTS.m",
+      "sha256": "74d71d8de1fc4210ac1014235703bde6772da97e26e263d8ae6f93095279a92f"
+    },
+    {
+      "file": "legacy_nb/NB_PREFLIGHT.m",
+      "sha256": "03ce24f6e237e4096211665fbe5d246ca1e0b3912d076554d48d797045ab0683"
+    },
+    {
+      "file": "legacy_nb/NB_PREFLIGHT_SELFTEST.m",
+      "sha256": "201b63bab4c6b27e8aadef41d79b755faddb86244dab61a5dd0f2534bb63fdb5"
+    },
+    {
+      "file": "legacy_nb/NB_PROTOCOL_CONFIG.m",
+      "sha256": "837b76e11491507eb5c8324bb13c5c7175e6537d3cfc3a265e842e989cb07f89"
+    },
+    {
+      "file": "legacy_nb/NB_RA_CONFIG_HASH.m",
+      "sha256": "d8705baf794b7352f630602b78a28a69ffe76d052912699dab64e3cfbbdf18a3"
+    },
+    {
+      "file": "legacy_nb/NB_RUN.m",
+      "sha256": "ec798016fa43f6699302a1c1a6808684a52f30eea1830068a5d44ecc50b0c55e"
+    },
+    {
+      "file": "legacy_nb/NB_SCOPE_GUARD.m",
+      "sha256": "ca8994e9ca8d265347264c43169e278b1d16b115fdd6944b3045881197b5c7f2"
+    },
+    {
+      "file": "legacy_nb/NB_SCOPE_JOBS.m",
+      "sha256": "240684482238bb81520d471da108d68453402c86234fef0565d622712c79f140"
+    },
+    {
+      "file": "legacy_nb/NB_SETUP_PATHS.m",
+      "sha256": "f4dd87c0564fdf4c3c48175c9845054bf25123c03f3a42253cc6d3b7f7ef4981"
+    },
+    {
+      "file": "legacy_nb/NB_SOURCE_HASH.m",
+      "sha256": "b4b8bc76480bc79be4a922a0032bc99ed3df11ae7ea6cbd6daef212be497ccfd"
+    },
+    {
+      "file": "legacy_nb/NB_STAGE_CONFIG.m",
+      "sha256": "f3e0f6db7de08d3fb6fd679adee3e3b7ac73bc7b68edc5ea6327469b0d8876f9"
+    },
+    {
+      "file": "legacy_nb/NB_SUMMARIZE.m",
+      "sha256": "a7eadc3fd76182243dc8ad333baa06c8df171558e8990c5306e4be9237ebe581"
+    },
+    {
+      "file": "legacy_nb/NB_SUMMARY_SELFTEST.m",
+      "sha256": "84df220453ba3443dec6ac02cd44247ce56cefec3a0d235668bc22155c9d44c4"
+    },
+    {
+      "file": "legacy_nb/NB_USER_CONFIG.m",
+      "sha256": "21ffded10b29e76b370baeb85dc0e72296cdf5afab9300497bb6626f0d0c86e5"
+    },
+    {
+      "file": "legacy_nb/PLAN_ONLY.m",
+      "sha256": "2d47b50ee17a551880de365e023385028fef42d43a66119cfdfcc11636724c79"
+    },
+    {
+      "file": "legacy_nb/RUN_ALL_SUMMARIES.m",
+      "sha256": "34d1f4e9cb75d814be8921d77eb8b99cf861ad8f8a6b86a573f12e194e29f912"
+    },
+    {
+      "file": "legacy_nb/RUN_RA_PREFLIGHT.m",
+      "sha256": "ba962adfc3334f5e4dcac76ada12b0ad6baac42e46ae8c3819bbc70aeb5e2b90"
+    },
+    {
+      "file": "legacy_nb/RUN_WINDOW_A_TRAJECTORY.m",
+      "sha256": "d7c6e4c6851d56182fc592367c8422d251eb0c6dfb5158f27c1ec96128027c42"
+    },
+    {
+      "file": "legacy_nb/RUN_WINDOW_B_COMPARISON.m",
+      "sha256": "534ed67df04ac8ad51686d07beb6640c54cc3fc4e8d58e1998e7d019c6094644"
+    },
+    {
+      "file": "legacy_nb/RUN_WINDOW_C_FACTORIAL.m",
+      "sha256": "d9294318ad50e73dc360cd463c9548476b2ba01c219851e7626c1e68b322a3c1"
+    },
+    {
+      "file": "legacy_nb/RUN_WINDOW_D_TRANSFER.m",
+      "sha256": "bc3f90a63f8e7e8aafb68768261dfbbe2f9d9c7fc84c5f8161cf86fd2f7b2cc7"
+    },
+    {
+      "file": "legacy_nb/RUN_WINDOW_E_COIL20.m",
+      "sha256": "375848fa04d723ee36caa74c6b8a4555589d0334eb60756c92f58e8ce1f48f3d"
+    },
+    {
+      "file": "legacy_nb/START_HERE.m",
+      "sha256": "e0b7a1fe32828fa3c1128dcec323c9aa07d44100066d821d1c16bc9305ef4a8d"
+    },
+    {
+      "file": "legacy_nb/external/NB_RA2DPCA.m",
+      "sha256": "714b7c9197d7a645c87ade4ea2a9cfc8e4c415ea26f9d9bfab4b1b1e08c7c42a"
+    },
+    {
+      "file": "legacy_nb/external/NB_RA_DEFAULT_GAMMA.m",
+      "sha256": "ed33c3c6223afe6d24bb02d603c74a0b82d362308749627760fa32772151ede6"
+    },
+    {
+      "file": "legacy_nb/external/NB_RA_DIAGNOSTICS.m",
+      "sha256": "c2052b91f0dee6b4565895204791a5e0e71708caacb1791f3cb36888706380d2"
+    },
+    {
+      "file": "legacy_nb/external/NB_RA_SELFTEST.m",
+      "sha256": "8cd445957abe7bca4ccf2c662f916a3fc36e49a5e60c4e48a0c371499a4d9a1b"
+    },
+    {
+      "file": "legacy_nb/instrumented/NB_CHECKPOINT_METRICS.m",
+      "sha256": "d1d823148f8008156f3fda3f5db5735c83f8bf880b6d01323b7657a60c30327e"
+    },
+    {
+      "file": "legacy_nb/instrumented/NB_SOLVER_TRACE.m",
+      "sha256": "24f932eaa5f91c92486a26271443fcc3d4bd75c1d4dab89f53d24c66f8af1b7b"
+    },
+    {
+      "file": "legacy_nb/instrumented/NB_TRACE_SELFTEST.m",
+      "sha256": "0e111bd168713dc1ae4b45a2d7380588ef5a8931a5fbb1e205bb49108d0ef6b8"
+    },
+    {
+      "file": "legacy_nb/vendor/P0_ALG.m",
+      "sha256": "f301fc4c5a19198dedff24e4d92761c57c5886418624ba7d87bc5cee06298b9f"
+    },
+    {
+      "file": "legacy_nb/vendor/P0_CASES.m",
+      "sha256": "6d0985d80d10fdbbda66bd6e18e4aafbe90ebe233bd8855fa73ed56befb6c3e3"
+    },
+    {
+      "file": "legacy_nb/vendor/P0_CONFIG.m",
+      "sha256": "331ce983a5f7055c1d8ba542d3aff29adc7e7e16c8cf7245e69cded345ed935d"
+    },
+    {
+      "file": "legacy_nb/vendor/P0_EXPORT_REVIEW.m",
+      "sha256": "cef75645af8e49c30501c72868449d78a2e5a34f20037f18529c2502f96abea8"
+    },
+    {
+      "file": "legacy_nb/vendor/P0_FIT_CASE.m",
+      "sha256": "c862e34fce7c65840bbb285149fed28ad1bc9da3a32068169c647e6450c46f31"
+    },
+    {
+      "file": "legacy_nb/vendor/P0_HOLM.m",
+      "sha256": "83876ba55ecb6910c928bf5601def23ea1bb15afcdd8348a9911ee6ccc6a12f7"
+    },
+    {
+      "file": "legacy_nb/vendor/P0_INNER.m",
+      "sha256": "b0b43fbb06692f4383cb5deba894f076da35afe4d84444d7cb23120dd1234d94"
+    },
+    {
+      "file": "legacy_nb/vendor/P0_IO.m",
+      "sha256": "9f82eea91ca2a50871571e9c1e36e0c2f1f0b44445fad122c93ded4554407248"
+    },
+    {
+      "file": "legacy_nb/vendor/P0_MATH.m",
+      "sha256": "2f78687de1635971af2116627e2b35e8659661b832e76d431aac6dad49ac6f5f"
+    },
+    {
+      "file": "legacy_nb/vendor/P0_METHODS.m",
+      "sha256": "1e6ac6abc583d31ae63c57c64bbed6830d05af40f2e77d91363d3293defce9c4"
+    },
+    {
+      "file": "legacy_nb/vendor/P0_METRICS.m",
+      "sha256": "260ea2a915bbfcf90d2139dc3520e5e9b2e10477e00a01ee746a66a260580ff4"
+    },
+    {
+      "file": "legacy_nb/vendor/P0_PLOTS.m",
+      "sha256": "3707aa8628a014dcb5da2a9140a2986ad33aed8fd9c11a1a341f0b404c81c2fa"
+    },
+    {
+      "file": "legacy_nb/vendor/P0_PREFLIGHT_REAL.m",
+      "sha256": "4d95abba7a6337c43e6bcf8c4990c7ba6424b3fd491927d7ce6b190637eb9a81"
+    },
+    {
+      "file": "legacy_nb/vendor/P0_RECORD.m",
+      "sha256": "0ff09600022e7b7a77547792016b5d48bfbfb333c9be2841514e207bc69b1cd7"
+    },
+    {
+      "file": "legacy_nb/vendor/P0_RUN_REAL.m",
+      "sha256": "3cd795afc817a90a6c583f28144410fae38abb42881fa4e9ae467314382c938b"
+    },
+    {
+      "file": "legacy_nb/vendor/P0_RUN_SYNTHETIC.m",
+      "sha256": "00cf2f1e8a4ce28a137fc5a5adc32c3a85db6d1ff69dcd49efca531d596239ed"
+    },
+    {
+      "file": "legacy_nb/vendor/P0_RUN_TUNE.m",
+      "sha256": "08329c450bed5afcda0bd293602224f003b3060e638d50a66aa6f848491b8d87"
+    },
+    {
+      "file": "legacy_nb/vendor/P0_SELFTEST.m",
+      "sha256": "4d8d68ffa5d686efdb15f9c6f988c9860af434655df64eb49bc5b949826906de"
+    },
+    {
+      "file": "legacy_nb/vendor/P0_SOLVER_V2.m",
+      "sha256": "3803c027b931fc0b2da0448dd7143d54d88b309506d9e601f34c32cf247ecf73"
+    },
+    {
+      "file": "legacy_nb/vendor/P0_STATE.m",
+      "sha256": "35c183273e25d4a3ce5b0c63d33315839183aef531163cda216e5a657beab36e"
+    },
+    {
+      "file": "legacy_nb/vendor/P0_STATS.m",
+      "sha256": "3270b416c7cfe39ba47dc1b646e8d1d7b465604320d237df1833a1bd026881ca"
+    },
+    {
+      "file": "legacy_nb/vendor/P0_SUMMARIZE.m",
+      "sha256": "9d833e2ad37a66cb3bdabd5815113161753409b76837865e971911cfcf85860f"
+    },
+    {
+      "file": "legacy_nb/vendor/P0_SUMMARIZE_ALL.m",
+      "sha256": "bc625a3c483a67cd6a4bed8e3e82f94388142029d00f9755df00e7296630c6f4"
+    },
+    {
+      "file": "legacy_nb/vendor/P0_TRACE_CODES.m",
+      "sha256": "cd5d1572e5bb649d022a42181f77054ade7e0bae30d69b6299fa25713a22359c"
+    },
+    {
+      "file": "legacy_nb/vendor/P0_TRACE_HEADERS.m",
+      "sha256": "6e5a655490aa9c064d83d9cb76d49b7cfcbaf076dfb4b6e908166e8e0f504dc7"
+    },
+    {
+      "file": "legacy_nb/vendor/START_TUKEY_CSSP_P0_V2.m",
+      "sha256": "38a97aa3b891db38cfa696f840ef86c5515cc76e7e11aa7da5fe0cb6876fa6c2"
+    },
+    {
+      "file": "legacy_nb/vendor/frozen/SU_CASE.m",
+      "sha256": "d22a34e3d2249c377d35a50bb12bb35b340df1735198f51a6c50bf491f6a4f99"
+    },
+    {
+      "file": "legacy_nb/vendor/frozen/SU_CSV.m",
+      "sha256": "1b0cab2fde67794cc8509f839b9b774c3c0c4af43dfc3a4375c08c5ec30204ce"
+    },
+    {
+      "file": "legacy_nb/vendor/frozen/SU_DATA.m",
+      "sha256": "f93b69666ed78c690da350aab0ccc79cad0b2d6ad339c744fe00f2610dc4c308"
+    },
+    {
+      "file": "legacy_nb/vendor/frozen/SU_FROZEN.m",
+      "sha256": "934d679ff3554815331b0bbd0aa3f151653af56d4a9482024ca00cf0fcb162f9"
+    },
+    {
+      "file": "legacy_nb/vendor/frozen/SU_SOLVER.m",
+      "sha256": "96c2e9889dd93f1ed6f6c42b1d9bfc6875784b086d643b499c34c83b3a4a5f6c"
+    },
+    {
+      "file": "legacy_nb/vendor/frozen/SU_STATE.m",
+      "sha256": "b23d7386d476a3d2a1f34a745698c8450f9d940e0dc6ecde2f247e5328d433ab"
+    },
+    {
+      "file": "legacy_nb/vendor/frozen/SU_SYN_FROZEN.m",
+      "sha256": "34722f1a9136b88a1b287671dad7ba5b048f506bbbd908aa6828eb138711e073"
+    },
+    {
+      "file": "legacy_nb/vendor/frozen/SU_UTIL.m",
+      "sha256": "691c7c97c9ded8e81d272a3596a15c54a4d69874f2b13b7f26fe5a52f7d3fc77"
+    },
+    {
+      "file": "legacy_nb/vendor/frozen/SU_WEIGHT_METRICS.m",
+      "sha256": "773e930492332691a380f9f0165d08ceefc728d4e038ef2b4f504055ee628d12"
+    },
+    {
+      "file": "legacy_nb/vendor/frozen/TC_PROTOCOL.m",
+      "sha256": "cf348f9842c15c57f7929e25ce41bc4a75cec604cab13643c03af8dfdfd26998"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "Please cite this research software and its associated manuscript when using the code."
+type: software
+title: "ESS-Tukey-BPCA: Weight-Based Cutoff Calibration Research Code"
+version: "0.1.0"
+date-released: "2026-11-16"
+authors:
+  - family-names: Jiang
+    given-names: Haijun
+  - family-names: Xu
+    given-names: Ganggang
+  - family-names: Jiang
+    given-names: Fen
+  - family-names: Wang
+    given-names: Yue
+  - family-names: Li
+    given-names: Xinyu
+abstract: "Research code associated with the manuscript Weight-Based Cutoff Calibration for Tukey Bilateral PCA: Properties and Empirical Limits. The manuscript is not represented here as an accepted or published article."
+keywords:
+  - robust bilateral PCA
+  - Tukey bisquare
+  - effective sample size
+  - matrix-valued signals
+  - sample weighting

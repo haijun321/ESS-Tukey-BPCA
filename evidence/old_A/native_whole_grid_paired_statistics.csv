@@ -1,0 +1,25 @@
+Module,Dataset,NoiseSigma,Contrast,Metric,ConditionsPerBlock,CompleteRepeatBlocks,ExcludedRepeatBlocks,MeanDifference,SampleSD,Lower95,Upper95,Interpretation
+A_trajectory,SYN,0.1,C3-C2,NRE,4,5,0,0.0329509623814732,0.075023844602462,-0.00244867409251835,0.100103127534667,equal-condition means within repeat; pointwise paired-seed bootstrap
+A_trajectory,SYN,0.1,C3-C2,ErrSubNorm,4,5,0,0.0284488039992552,0.0745885454797842,-0.00980730784102919,0.09523370838267,equal-condition means within repeat; pointwise paired-seed bootstrap
+A_trajectory,SYN,0.1,C3-C2,ACC,4,0,5,NaN,NaN,NaN,NaN,equal-condition means within repeat; pointwise paired-seed bootstrap
+A_trajectory,SYN,0.1,C3-C2,RuntimeSeconds,4,5,0,-82.4487179,117.598330242663,-165.99545041,22.03869572,equal-condition means within repeat; pointwise paired-seed bootstrap
+A_trajectory,SYN,0.1,C3-C2,ESS,4,5,0,0.0743905247690786,0.00356853290962516,0.0723406790213305,0.0774582455223874,equal-condition means within repeat; pointwise paired-seed bootstrap
+A_trajectory,SYN,0.1,C3-C2,ZeroFraction,4,5,0,-0.0216605902777778,0.00549027770640969,-0.0266039930555556,-0.0189220486111111,equal-condition means within repeat; pointwise paired-seed bootstrap
+A_trajectory,SYN,0.1,C3-C2,TPR0,4,0,5,NaN,NaN,NaN,NaN,equal-condition means within repeat; pointwise paired-seed bootstrap
+A_trajectory,SYN,0.1,C3-C2,FPR0,4,5,0,-0.0090866344558485,0.000495327328701445,-0.00951514775691917,-0.00873375664509676,equal-condition means within repeat; pointwise paired-seed bootstrap
+A_trajectory,SYN,0.1,C3-C4,NRE,4,5,0,3.87773162191518e-10,8.71699271328114e-10,-3.29809790589053e-12,1.16769309776998e-09,equal-condition means within repeat; pointwise paired-seed bootstrap
+A_trajectory,SYN,0.1,C3-C4,ErrSubNorm,4,5,0,1.92789364125701e-09,4.35515441960185e-09,-4.78418291094407e-11,5.83102844550765e-09,equal-condition means within repeat; pointwise paired-seed bootstrap
+A_trajectory,SYN,0.1,C3-C4,ACC,4,0,5,NaN,NaN,NaN,NaN,equal-condition means within repeat; pointwise paired-seed bootstrap
+A_trajectory,SYN,0.1,C3-C4,RuntimeSeconds,4,5,0,-5.75469643499998,7.71827904848457,-11.860251715,0.152747825000051,equal-condition means within repeat; pointwise paired-seed bootstrap
+A_trajectory,SYN,0.1,C3-C4,ESS,4,5,0,5.97565519844245e-09,1.33629747493904e-08,-1.47910572678711e-12,1.79282436507666e-08,equal-condition means within repeat; pointwise paired-seed bootstrap
+A_trajectory,SYN,0.1,C3-C4,ZeroFraction,4,5,0,0,0,0,0,equal-condition means within repeat; pointwise paired-seed bootstrap
+A_trajectory,SYN,0.1,C3-C4,TPR0,4,0,5,NaN,NaN,NaN,NaN,equal-condition means within repeat; pointwise paired-seed bootstrap
+A_trajectory,SYN,0.1,C3-C4,FPR0,4,5,0,0,0,0,0,equal-condition means within repeat; pointwise paired-seed bootstrap
+A_trajectory,SYN,0.1,C3-C1,NRE,4,5,0,-0.017977189478649,0.0384657055107655,-0.0520386673307319,0.00201430933938525,equal-condition means within repeat; pointwise paired-seed bootstrap
+A_trajectory,SYN,0.1,C3-C1,ErrSubNorm,4,5,0,-0.027165948620166,0.0531741949137519,-0.0754992537332585,-0.000253883426184084,equal-condition means within repeat; pointwise paired-seed bootstrap
+A_trajectory,SYN,0.1,C3-C1,ACC,4,0,5,NaN,NaN,NaN,NaN,equal-condition means within repeat; pointwise paired-seed bootstrap
+A_trajectory,SYN,0.1,C3-C1,RuntimeSeconds,4,5,0,37.095796125,102.341856066547,-38.527796445,124.3073755,equal-condition means within repeat; pointwise paired-seed bootstrap
+A_trajectory,SYN,0.1,C3-C1,ESS,4,5,0,-0.0121690633444535,0.00191921794981452,-0.0139525218127685,-0.0109363551362038,equal-condition means within repeat; pointwise paired-seed bootstrap
+A_trajectory,SYN,0.1,C3-C1,ZeroFraction,4,5,0,0.0132166666666667,0.00296660907767252,0.0112441189236111,0.0158168402777778,equal-condition means within repeat; pointwise paired-seed bootstrap
+A_trajectory,SYN,0.1,C3-C1,TPR0,4,0,5,NaN,NaN,NaN,NaN,equal-condition means within repeat; pointwise paired-seed bootstrap
+A_trajectory,SYN,0.1,C3-C1,FPR0,4,5,0,8.08133386909419e-05,7.14758357286159e-05,4.16372759335308e-05,0.000145905218868452,equal-condition means within repeat; pointwise paired-seed bootstrap

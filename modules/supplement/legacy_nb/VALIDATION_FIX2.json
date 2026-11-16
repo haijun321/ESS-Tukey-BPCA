@@ -1,0 +1,26 @@
+{
+  "release": "V2_FIX2_20261109",
+  "changed_existing_files": [
+    "NB_CONFIG.m",
+    "NB_FIT.m",
+    "NB_PIPELINE_SELFTEST.m",
+    "NB_RUN.m",
+    "NB_SUMMARIZE.m",
+    "README_CN.txt",
+    "RUN_RA_PREFLIGHT.m"
+  ],
+  "explicit_record_array_conversions": 10,
+  "frozen_vendor_instrumented_external_identical": true,
+  "fit_logic_identical_except_code_version": true,
+  "configuration_identical_except_output_location": true,
+  "matlab_available": false,
+  "octave_available": false,
+  "native_regression_executed": false,
+  "native_regression_entry": "START_HERE -> NB_PIPELINE_SELFTEST",
+  "native_checks_added": [
+    "empty text record export",
+    "fitted result identity and NRE CSV round trip",
+    "single/multiple selection and weight rows",
+    "A trace and mechanism diagnostic export"
+  ]
+}

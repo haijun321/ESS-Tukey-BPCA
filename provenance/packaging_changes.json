@@ -1,0 +1,36 @@
+{
+  "date": "2026-11-16",
+  "numerical_matlab_sources_modified": false,
+  "excluded_nonruntime_files": [
+    "modules/supplement/ALL_MATLAB_CODE.txt",
+    "modules/supplement/external_authors/CLASSICAL_SOURCE_SEARCH_20261115.json"
+  ],
+  "plot_output_relocation": {
+    "file": "analysis/make_sample_figures.py",
+    "original_sha256": "6b5354f9afc1cf0340797167f43dfd28ea375eea8d6cab4b37a6b2163ba5bb39",
+    "new_sha256": "1c92b98d7eea1be09eadf88b814981e7e776dc2519d34c27093a785aab74a0f0",
+    "changes": "Only redirects the two figure output paths from manuscript folders to figures/; data, statistics and plotting code unchanged."
+  },
+  "source_archives": [
+    {
+      "file": "Tukey_CSSP_P0_Experiments_V2_20261004.zip",
+      "sha256": "32a8cc20769f5540958da356488d2df58df7cac7f540290fe6a63e80162fae7a"
+    },
+    {
+      "file": "Tukey_CSSP_Supplement_Running_20261115.zip",
+      "sha256": "15bd867462e475e2a401e9e01ea8b9e6535e6a8b2aa8b8804bde6bd7802079d4"
+    },
+    {
+      "file": "Tukey_Sample_Extension_v1_20261115.zip",
+      "sha256": "1b64bafaf07bcc2703a39397e5477a05d8fb2fc0fd63a668b90e24cb3fd82c13"
+    }
+  ],
+  "redacted_nonruntime_files": [
+    {
+      "file": "modules/supplement/legacy_nb/SOURCE_PROVENANCE_NB.txt",
+      "original_sha256": "ae784a3685ca3dc87e4c8c85c558a1f0aa2699835a0e1e5c6d8f2ade378aa89b",
+      "new_sha256": "26cd086937c65bf28ec84f0c07b44e7dc5ac44e90d4bf24303edc3a2fa24bbff",
+      "change": "Removed one internal file-service identifier line; source-archive filename and scientific provenance retained. Numerical source hashing does not include this text file."
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+"Dataset","Condition","MethodID","Version","Budget","Status","Count","Denominator"
+"ORL","B10","Auto","v2",1,"budget_exhausted",10,10
+"ORL","B10","Eta085","v2",1,"budget_exhausted",10,10
+"ORL","B10","FixedC4685","v2",1,"budget_exhausted",10,10
+"ORL","B10","SelectedC","v2",1,"budget_exhausted",10,10
+"ORL","B10","SelectedEta","v2",1,"budget_exhausted",10,10
+"ORL","Clean","Auto","v2",1,"budget_exhausted",10,10
+"ORL","Clean","Eta085","v2",1,"budget_exhausted",10,10
+"ORL","Clean","FixedC4685","v2",1,"budget_exhausted",10,10
+"ORL","Clean","SelectedC","v2",1,"budget_exhausted",10,10
+"ORL","Clean","SelectedEta","v2",1,"budget_exhausted",10,10
+"ORL","I10","Auto","v2",1,"budget_exhausted",10,10
+"ORL","I10","Eta085","v2",1,"budget_exhausted",10,10
+"ORL","I10","FixedC4685","v2",1,"budget_exhausted",10,10
+"ORL","I10","SelectedC","v2",1,"budget_exhausted",10,10
+"ORL","I10","SelectedEta","v2",1,"budget_exhausted",10,10

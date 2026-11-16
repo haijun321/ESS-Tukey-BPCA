@@ -1,0 +1,39 @@
+function C = SMPV_P0_CONFIG()
+% CSSP ESS-Tukey BPCA P0 experiments. Edit paths here, or pass an options struct.
+% The archive is the COMPLETED TC run, not the raw image-data directory.
+    C.version = 'CSSP-Tukey-P0-V2-20261004';
+    C.packageRoot = fileparts(mfilename('fullpath'));
+    C.archiveRoot = 'H:\Students\Jiang_haijun\Tukey BPCA\results_Tukey_CONFIRM_v1';
+    C.outputRoot = fullfile(C.packageRoot,'results_P0_V2');
+    C.repeats = 1:10;
+    C.realDatasets = {'YALE','ORL'};
+    C.realConditions = {'Clean','I10','I30','B10','B30'};
+    C.realMainDatasets = {'ORL'};
+    C.realMainConditions = {'Clean','I10','I20','I30','B10','B20','B30'};
+    C.tuneDatasets = {'ORL'};
+    C.tuneConditions = {'Clean','I10','B10'};
+    C.tuneEtaGrid = [.82 .85 .88 .91 .94 .97];
+    C.tuneCGrid = [2.5 3.5 4.685 6 8];
+    C.syntheticBudget = [60 10 20]; % outer, inner, proposal backtracking
+    C.syntheticTimeLimit = 180;    % soft per-fit limit, seconds
+    C.realBudget = [50 5 12];
+    C.realTimeLimit = []; % retain the original fold configuration's limit
+    C.budgetMultipliers = [1 2]; % applies to outer/inner/search AND time limit
+    C.syntheticDimensions = [240 40 30 5 4]; % n,p,q,r,c; frozen paper geometry
+    C.syntheticSeedOffset = 0; % 0: matched reevaluation; new seeds need NEW outputRoot
+    C.includeFixedEtaNoZero = false; % optional fifth CORE configuration
+    C.bootstrapResamples = 10000;
+    C.statisticsSeed = 20261004;
+    C.tieTolerance = 1e-10;
+    C.makePlots = true;
+    C.exportTIFF = false;
+    C.runSelfTest = true;
+    C.gradientTolerance = 1e-6; % norm(grad Qcode)/max(1,abs(Qcode))
+    C.projectorTolerance = 1e-6;
+    C.stateTolerance = 1e-5;
+    C.minimumAcceptedMove = 1e-12;
+    C.gradientBacktracks = 40;
+    C.armijoConstant = 1e-4;
+    C.gradientStepMax = 1;
+    C.majorizerTolerance = 1e-8;
+end

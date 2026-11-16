@@ -1,0 +1,9 @@
+Phase,Condition,Method,Status,Count
+precheck,CaseOnly,E,budget_exhausted,1
+precheck,CaseOnly,ES,budget_exhausted,1
+precheck,CellOnly,E,budget_exhausted,1
+precheck,CellOnly,ES,budget_exhausted,1
+precheck,Clean,E,budget_exhausted,1
+precheck,Clean,ES,budget_exhausted,1
+precheck,Mixed,E,budget_exhausted,1
+precheck,Mixed,ES,budget_exhausted,1

@@ -1,0 +1,11 @@
+验证范围说明
+
+1. CSSP_SELFTEST.m 是 MATLAB 工程自检，使用小型人工生成数组，不读取正式图像档案，也不产生论文实验结果。请在完整代码路径设置后执行 CSSP_SELFTEST(C)。它检查实际 MATLAB 数学函数、C5 定义、权重与边界口径、诊断掩码不影响拟合、轨迹记录一致性、均值回加、缓存身份和选参锁定。
+
+2. tests/validate_mathematics.py 是独立的 NumPy 数学参考检验，依赖 Python 3 和 NumPy。它验证投影梯度的有限差分、Tukey 二次上界和 ESS 算术。运行后生成 mathematics_check.json。该结果不等于 MATLAB 代码或完整实验已经运行通过。
+
+3. 本代码交付环境没有 MATLAB/Octave。因此，MATLAB 自检和正式 YALE/ORL 实验需要在用户 MATLAB 环境执行；不得将静态语法解析或独立 Python 数学检验当作正式实验完成证明。
+
+4. 静态解析记录见 static_parser_report.json。该报告只说明所列源文件被 MATLAB 静态解析器接受，不能证明图像档案完整、外部方法可用、模型已收敛或算法优于对照。
+
+5. 自检、试运行与正式实验应分开保存。即使自检通过，论文表格也只能读取正式实验目录中的真实结果；缺失、失败、依赖阻塞和预算终止应保留实际状态。

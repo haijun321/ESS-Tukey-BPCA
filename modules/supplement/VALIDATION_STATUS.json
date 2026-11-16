@@ -1,0 +1,20 @@
+{
+  "artifact": "Tukey_CSSP_Supplement_20261115",
+  "matlab_executed": false,
+  "octave_executed": false,
+  "r_executed": false,
+  "scientific_experiments_executed": false,
+  "validation_scope": [
+    "MISS_HIT MATLAB static parsing",
+    "independent NumPy directional-gradient and Tukey upper-bound checks"
+  ],
+  "native_selftest_file": "CSSP_SELFTEST.m",
+  "required_user_validation": "Execute MATLAB self-test and a frozen-archive pilot before scientific use",
+  "external_status": {
+    "L2": "implemented shared-init L2 objective",
+    "BA2DPCA": "verified original source unavailable; adapter contract and explicit BLOCKED status",
+    "ROMPCA": "original-source R bridge implemented; requires R/packages/source download; not executed here",
+    "RA2DPCA_dev": "optional existing independent MATLAB port; not dimension-identical or official MATLAB software"
+  },
+  "p0_source_mismatches_vs_20261031": []
+}

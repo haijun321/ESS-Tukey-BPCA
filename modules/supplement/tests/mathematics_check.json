@@ -1,0 +1,11 @@
+{
+  "pass": true,
+  "scope": "independent_numpy_mathematics_only",
+  "matlab_executed": false,
+  "scientific_experiments_executed": false,
+  "random_trials": 40,
+  "maximum_relative_gradient_error": 5.5843205615246916e-09,
+  "maximum_majorizer_excess": 0.0,
+  "positive_equal_weights_with_zeros_ess": 0.8,
+  "equal_ess_different_zero_fraction": true
+}

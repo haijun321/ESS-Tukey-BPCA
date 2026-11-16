@@ -1,0 +1,28 @@
+{
+  "native_matlab_execution": false,
+  "native_octave_execution": false,
+  "static_parser": "MISS_HIT 0.9.44",
+  "planned_formal_fits": 80,
+  "planned_precheck_fits": 8,
+  "main_matlab_files": 11,
+  "vendor_matlab_files": 36,
+  "matlab_syntax_issues": {},
+  "missing_package_function_dependencies": [],
+  "vendor_algorithm_files_matching_namespace_only_transformation": 35,
+  "vendor_files_with_read_only_diagnostics": [
+    "P0_SOLVER_V2"
+  ],
+  "specification_counts": {
+    "case_matrices": 24,
+    "cell_only_entries": 28800,
+    "mixed_local_entries": 25920,
+    "mixed_union_entries": 54720,
+    "mixed_total_entry_fraction": 0.19
+  },
+  "coefficient_floor": 0.5693253194251531,
+  "sample_ess_lower_bound": 0.9246865197012205,
+  "orthogonal_error_decomposition_relative_error": 3.8526992604509886e-16,
+  "precheck_and_formal_seed_sets_disjoint": true,
+  "independent_review": "Two-pass read-only audit of pairing, masks, truth isolation, accepted/attempted diagnostics, summaries, cache signatures and interfaces; no additional must-fix issue found.",
+  "limits": "No MATLAB or Octave is installed here. Python checks validate numerical specifications only; MATLAB selfcheck/precheck will run on the user machine. No scientific fit results are included."
+}

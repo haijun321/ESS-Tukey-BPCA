@@ -1,0 +1,18 @@
+{
+  "pass": true,
+  "scope": "Source-byte integrity and exported-record consistency only",
+  "retained_files_checked": 352,
+  "sample_source_hashes_checked": 47,
+  "sample_formal_records": 80,
+  "sample_statuses": {
+    "timecap": 79,
+    "budget_exhausted": 1
+  },
+  "sample_subspace_reduction_percent": {
+    "CaseOnly": 5.308940299829153,
+    "Mixed": 4.038774833263154
+  },
+  "matlab_executed": false,
+  "scientific_fits_executed": 0,
+  "notice": "This check does not replay raw arrays, model bases or optimization traces."
+}

@@ -1,0 +1,10 @@
+Phase,Condition,Method,Status,Count
+formal,CaseOnly,E,timecap,10
+formal,CaseOnly,ES,timecap,10
+formal,CellOnly,E,timecap,10
+formal,CellOnly,ES,timecap,10
+formal,Clean,E,timecap,10
+formal,Clean,ES,timecap,9
+formal,Clean,ES,budget_exhausted,1
+formal,Mixed,E,timecap,10
+formal,Mixed,ES,timecap,10

@@ -1,0 +1,17 @@
+Dataset,Condition,TargetMode,AuditPoints,ChangedCutoff
+ORL,B10,auto,30,2
+ORL,B10,fixed,30,0
+ORL,I30,auto,30,30
+ORL,I30,fixed,30,30
+SYN,block_coherent_k4_p010,auto,30,2
+SYN,block_coherent_k4_p010,fixed,30,0
+SYN,block_random_k4_p010,auto,30,0
+SYN,block_random_k4_p010,fixed,30,0
+SYN,impulse_k4_p010,auto,30,0
+SYN,impulse_k4_p010,fixed,30,0
+SYN,sample_k4_p000,auto,30,0
+SYN,sample_k4_p000,fixed,30,0
+YALE,B30,auto,30,0
+YALE,B30,fixed,30,0
+YALE,Clean,auto,30,2
+YALE,Clean,fixed,30,0

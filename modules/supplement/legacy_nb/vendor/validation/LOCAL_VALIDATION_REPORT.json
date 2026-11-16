@@ -1,0 +1,30 @@
+{
+  "EngineeringOnly": true,
+  "MATLABExecuted": false,
+  "OctaveExecuted": false,
+  "ScientificFitsExecuted": false,
+  "MathematicalChecksPass": true,
+  "MaximumScaledGradientError50Checks": 2.0303509984387347e-09,
+  "MaximumBasisInvariantQError50Checks": 2.674039383782931e-16,
+  "MajorizerTrials": 240,
+  "MajorizerViolations": 0,
+  "MaximumGuardEqualityError": 1.4210854715202004e-14,
+  "GradientBacktrackingChecks": 8,
+  "GuardCounterexample": {
+    "QBefore": 9.0,
+    "QAfter": 7.3500000000000005,
+    "LBefore": 4.495951215,
+    "LAfter": 6.117499938776041
+  },
+  "FailedSearchTestRetainsFailure": true,
+  "ExactSignFlipCheck": true,
+  "FrozenSnapshotHashesVerified": 10,
+  "RealReplayConfigurationAuditFunctions": 37,
+  "RealReplayRequiredAlgFieldsCovered": 41,
+  "RealReplayMissingAlgFields": [],
+  "RealReplayMemoryModeMatchesFrozen": true,
+  "RealReplayMissingMemoryModeNegativeControlPass": true,
+  "MATLABLexicalBlockFilesChecked": 26,
+  "MATLABLexicalBlockIssues": [],
+  "CompilationGuarantee": false
+}

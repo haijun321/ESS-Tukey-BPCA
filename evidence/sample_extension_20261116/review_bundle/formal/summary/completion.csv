@@ -1,0 +1,9 @@
+Phase,Condition,Method,PlannedFits,ObservedFits,CompleteFits,FailedFits,MissingFits
+formal,Clean,E,10,10,10,0,0
+formal,Clean,ES,10,10,10,0,0
+formal,CellOnly,E,10,10,10,0,0
+formal,CellOnly,ES,10,10,10,0,0
+formal,CaseOnly,E,10,10,10,0,0
+formal,CaseOnly,ES,10,10,10,0,0
+formal,Mixed,E,10,10,10,0,0
+formal,Mixed,ES,10,10,10,0,0

@@ -1,0 +1,101 @@
+外部对照接入与实际可运行范围（2026-11-15）
+================================================
+
+一、当前各方法的真实状态
+
+1. L2：用冻结P0求解器的平方损失目标，沿用共同稳健BPCA初始化。
+   这是共同初始化下的L2参照，不宣称取得了另一个原作者GLRAM程序。
+2. RA2DPCA_dev：旧包已有MATLAB移植，保留作者R算法的均值、单位基、
+   行权重和相对残差停止规则。它不是原作者官方MATLAB代码。
+   论文：Tan & Yang, Pattern Recognition 168 (2025), 111817.
+   DOI：https://doi.org/10.1016/j.patcog.2025.111817
+   原作者仓库：https://github.com/cqtzx/RA2DPCA
+   对照版本：84d54472cc5b615611b605f330df2501d00401d0
+3. ROMPCA：已核对原作者公开ZIP及R函数接口，提供调用原R代码的桥接，
+   没有用自编近似算法替代。需要本机安装R以及原作者列出的CRAN依赖。
+   当前制作环境没有Rscript，尚未执行端到端ROMPCA拟合。
+4. BA2DPCA / L2pSB2DPCA：未取得可核验的官方源码。
+   未配置真实适配器时，将明确输出BLOCKED，不能记成已完成基线。
+
+二、ROMPCA的一次性准备（与科学实验分开执行）
+
+在MATLAB将当前目录切到本包根目录；取得正式配置C后，执行：
+  CSSP_SETUP_ROMPCA('download', C)
+  CSSP_SETUP_ROMPCA('install', C)
+  CSSP_SETUP_ROMPCA('check', C)
+
+如尚未配置C，也可以执行：
+  CSSP_SETUP_ROMPCA('download')
+  CSSP_SETUP_ROMPCA('install')
+  CSSP_SETUP_ROMPCA('check')
+
+Rscript不在PATH且未被自动发现时，在用户配置中填写绝对路径，例如：
+  C.rscriptPath = 'C:\Program Files\R\R-4.x.x\bin\Rscript.exe';
+应替换为本机实际文件路径，不能照抄不存在的示例版本。
+可选C.rompcaSource指向已下载的ROMPCA_Code_JCGS.R；为空时使用
+external_original/ROMPCA_Code_JCGS.R。
+可选C.rLibraryPath设置R依赖目录；默认external_original/R_library。
+
+download仅下载原作者软件；install明确安装依赖。主实验与预检均不自动
+安装R包，也不替换、升级已安装的R环境。安装可能需要本机Rtools或其他
+系统依赖；失败日志保留，不能将依赖缺失记成数值结果。
+
+原作者主页：https://fabiocentofanti.github.io/publications/
+原作者ZIP：https://fabiocentofanti.github.io/files/Code_ROMPCA.zip
+论文：https://doi.org/10.1080/10618600.2026.2637632
+ZIP SHA256：4b28e46b76257bbc6e71da9319b4014f05c41d69a049eaab1a146d14111f177b
+R源码SHA256：e0817d038ce9da2754228e7a875b2b5004fb103295675650f45c72527883e171
+
+下载器固定上述原作者版本。新版本内容发生变化时会停止，需先核对新接口
+再明确更新pin。此次未发现ZIP中的独立再分发许可证，因此交付包仅含自写
+桥接与下载器，不宣称获得第三方软件再分发许可，不附原作者R源码或数据。
+
+三、ROMPCA桥接的算法和读出约定
+
+训练张量以小端double按MATLAB列主序写入，R直接恢复p×q×n数组。
+传入的只有训练X、冻结行列秩、随机种子、迭代预算和容差；不提供污染mask、
+probe或probe标签。原作者ROMPCA默认采用DDC与L1初始化选择，保留该流程。
+R脚本只跳过源码顶层自动安装包的调用；不改写数值函数。原作者示例中的
+外层N/dimension符号由桥接按训练张量维数提供，避免原函数诊断段自由变量
+在新进程中缺失。silent=FALSE保留原进度条路径，输出由日志接收。
+
+返回原作者两个模式的V列表，分别作为MATLAB的U、V；Center.corr（若有）
+作为mean，否则使用Center。新图像读出为：
+  Z = U'*(X-mean)*V
+  reconstruction = mean + U*Z*V'
+mean不可省略，不应将官方训练核心分数当成新图像编码。
+保存实际原生初始化的基与中心哈希、R版本、包版本、原生停止原因和loss。
+ROMPCA的相对loss停止不等于驻点证明。max_itr控制原ROMPCA/L1阶段，
+DDC初始化中MPCA保留其原程序默认预算，未伪称与P0每次更新一一等价。
+
+四、经典外部方法适配器
+
+将可靠原程序加入MATLAB path，在配置中设置：
+  C.externalAdapters.BA2DPCA = 'MY_VERIFIED_BA_ADAPTER';
+或：
+  C.externalAdapters.L2pSB2DPCA = 'MY_VERIFIED_L2PSB_ADAPTER';
+
+适配器契约：
+  function model = MY_VERIFIED_BA_ADAPTER(X, info)
+X是受污染训练张量。info包含rank、seed、maxOuter、可选共同U0/V0、
+development.gallery及galleryLabels；没有mask、probe或probeLabels。
+如需选参，只能使用development。
+返回U、V以及可选mean；必须返回provenance、实际initializationHash，
+推荐返回stopReason、elapsedSeconds、initializationSeconds、selection等。
+provenance应列论文、实际源码来源、版本和任何实现/默认参数差异。
+正交性、维数、均值和有限性在运行时核验，不会静默补QR、重命名或零均值。
+
+五、RA-2DPCA比较限制
+
+lambda网格默认[0.1,1,10]；gamma按作者例程的训练Q90，不从probe选择。
+仅用干净gallery NRE选lambda。原生单侧维数是p*k，k按ceil(r*c/p)
+确定，因此必须报告真实FeatureDimension，不能声称等于双边r*c。
+选中的权重全零、协方差退化或秩不足时，记录UNUSABLE_BASELINE；
+不修改gamma来救回失败候选，不把退化结果作为正常基线领先证据。
+
+六、检查与恢复
+
+CSSP_EXTERNAL_CHECK只检查依赖；Ready=true不是完整拟合正确性证明。
+正式运行前需要小规模pilot。相同路径下源码和R包版本改变后，外部实现
+指纹应变化；主程序应把CHECK.SourceHash计入外部任务签名。
+本包不读取其他论文的拟合结果作为当前外部基线。

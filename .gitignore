@@ -1,0 +1,37 @@
+# Local data and large fitted-model archives
+/data/*
+!/data/README.md
+/local_data/
+/results/
+/generated/
+/figures/
+/reproducibility/integrated_figure_summary.csv
+/reproducibility/integrated_figure_metadata.json
+/reproducibility/figure_metadata_v2.json
+**/results_*/
+**/NB_LOCAL_PATHS.mat
+**/RUNNING.lock
+**/WINDOW_RUNNING.lock
+**/.sample_run_lock/
+**/REQUEST_STOP.flag
+**/STOP_SAMPLE.txt
+# Optional downloaded R source and machine-local libraries
+/modules/supplement/external_original/
+**/external_authors/downloads/
+**/external_authors/rompca*/
+**/r_library/
+**/R_library/
+# Editors / local Python environments / compilation products
+__pycache__/
+*.py[cod]
+.venv/
+.env
+*.asv
+*.m~
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.aux
+*.log
+*.out

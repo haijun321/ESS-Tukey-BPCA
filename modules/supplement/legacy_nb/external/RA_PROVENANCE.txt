@@ -1,0 +1,65 @@
+RA-2DPCA provenance and comparison contract
+=========================================
+Paper: Z. Tan and H. Yang, Reweighted angle two-dimensional principal
+component analysis for feature extraction, Pattern Recognition 168 (2025),
+111817. DOI: 10.1016/j.patcog.2025.111817.
+Author repository: https://github.com/cqtzx/RA2DPCA
+Pinned commit: 84d54472cc5b615611b605f330df2501d00401d0
+Algorithm reference: RA_2DPCA/funs.R, RA_2DPCA and RE_RA_2DPCA functions.
+Example reference: RA_2DPCA/RE.R.
+The author README identifies the repository with the paper and identifies
+the original implementation as R. No LICENSE file was present in the
+inspected tree. This package does not redistribute the author's source or
+datasets. NB_RA2DPCA.m independently implements the documented recurrence.
+
+Preserved algorithm choices
+---------------------------
+* Right projection initialized to the first k columns of the identity.
+* For each centered matrix row z, d=||z-zVV'||_2 and
+  weight=max(0,lambda-d/gamma)/(||z||_2*d+0.0001).
+* Accumulate sum(weight*z'*z) and retain the k leading eigenvectors.
+* Stop when abs(f_new-f_old)/f_new <= 1e-4, where f is the sum of sample
+  Frobenius residual norms; f_old starts at 1; at most 100 updates.
+* By default subtract the mean training image, matching RE_RA_2DPCA.
+* The author example uses lambda=1 and gamma=the raw training array's
+  empirical 90th percentile. This is data-scale dependent. An experiment
+  using a development-selected gamma must identify that selection protocol.
+
+Explicit numerical/engineering differences
+-----------------------------------------
+* MATLAB eig replaces R eigen. Eigenvector signs do not affect projectors.
+  Repeated eigenvalues can yield different bases/subspaces in finite
+  precision; this is not bitwise equivalence to the R implementation.
+* Row calculations are vectorized and covariance is symmetrized.
+* Input checks reject nonpositive gamma instead of silently changing it.
+* Exact zero total residual receives a dedicated status because the
+  author's relative-change expression has a zero denominator.
+* Optional time/iteration limits are explicitly recorded.
+* V2 logs training-only positive-row-weight fractions, covariance norm/rank,
+  and initial/final weight diagnostics. This does not change a nondegenerate
+  recurrence. If all weights or the covariance are exactly zero, the prior
+  basis is retained and the fit is labelled zero_weight_degenerate instead
+  of diagonalizing an all-zero covariance and claiming a stable arbitrary
+  direction. No parameter or scale is silently changed to rescue that fit.
+* No optimality/stationarity claim is attached to the author's relative-
+  residual stopping rule.
+
+Metric and fairness requirements
+-------------------------------
+This is a one-sided method with p*k feature entries. Do not compare its
+integer k directly with both ranks r,c of a bilateral method. Report actual
+feature dimension and, if needed, performance against representation size.
+Reconstruction: mu + (X-mu)*V*V'.
+Features: reshape((X-mu)*V,[],1).
+Classification standardization is learned from the gallery only.
+Do not feed the returned identity U into a bilateral subspace-error metric;
+bilateral Esub is not applicable to this external baseline. Evaluate common
+NRE and classification metrics, with all methods' native mean handling.
+
+BA2DPCA status
+--------------
+The original author's university page lists the paper, but no BA2DPCA code
+link was present at that entry. No verified official implementation or
+public source-faithful implementation was located. This package must not
+label a generic angular/IRLS routine as BA2DPCA. The external comparison
+remains incomplete until a verified second baseline is integrated.

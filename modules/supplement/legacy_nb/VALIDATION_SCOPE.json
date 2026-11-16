@@ -1,0 +1,51 @@
+{
+  "package": "NB-SUPPLEMENT-V2-FIX1",
+  "MATLABFilesParsed": 86,
+  "SyntaxCheck": "MISS_HIT Lint Summary: 86 file(s) analysed, everything seems fine",
+  "BundledOriginalMatlabSourcesUnchanged": true,
+  "MATLABExecutedForV2": false,
+  "OctaveExecuted": false,
+  "ScientificFitsExecutedHere": false,
+  "V1UserMatlabLog": {
+    "Version": "R2025a 25.1.0.2943329",
+    "EngineeringSelftestsPass": true,
+    "ACompleted": 16,
+    "APlanned": 32,
+    "BCompleted": 32,
+    "BPlanned": 106,
+    "CCompleted": 8,
+    "CPlanned": 32,
+    "DCompleted": 12,
+    "DPlanned": 12,
+    "ECompleted": 0,
+    "EPlanned": 18
+  },
+  "RAHealthyRecurrenceParity": "external/RA_DIAGNOSTIC_VALIDATION.json",
+  "MathematicalChecks": "vendor/validation/LOCAL_VALIDATION_REPORT.json",
+  "Changes": [
+    "Dependency preflight before fitting",
+    "Explicit SYN/REAL scopes with duplicate guard",
+    "Location-only settings do not modify code",
+    "Full RA lambda grid and adequate RA pilot budget",
+    "Training-only activation diagnostics and honest degeneracy labels",
+    "Pilot and paper execution readiness separated from method superiority",
+    "Stale successful run status invalidated at new run start"
+  ],
+  "KnownMissingDependency": "Verified BA2DPCA source; optional interface retained",
+  "date": "2026-11-06",
+  "MATLABExecutedForFIX1": false,
+  "FIX1": {
+    "UserObservedError": "Dissimilar-structure assignment in NB_PREFLIGHT cache insertion on MATLAB R2025a",
+    "ModifiedMatlabFiles": [
+      "NB_PREFLIGHT.m",
+      "NB_PREFLIGHT_SELFTEST.m"
+    ],
+    "TypedMainAndCoilCaches": true,
+    "RegressionChecksAdded": [
+      "valid COIL deep cache insertion and reuse",
+      "empty task array"
+    ],
+    "AlgorithmOrCalibrationChanged": false,
+    "MATLABRuntimeRegressionPending": true
+  }
+}

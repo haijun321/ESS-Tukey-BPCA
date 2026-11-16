@@ -1,0 +1,26 @@
+可选外部方法接入
+================
+本包默认已有RA-2DPCA MATLAB移植；BA2DPCA原作者实现尚未取得。
+没有源码时不要把自编相似角度加权程序称为BA2DPCA。
+
+取得可靠源码后，实现一个MATLAB函数，例如：
+ function model = MY_BA_ADAPTER(X,info)
+ 输入X为归一化受污染训练tensor；info.rank为共同双边秩；
+ info.development只包含开发/验证数据，绝不包含probe。
+ info.developmentCase为开发训练实例，info.U0/V0为可用的共同初始基。
+ 输出model至少需要：
+   U、V：与原算法输出一致的正交基；单边时可用另一侧单位阵，必须报告真实特征数；
+   mean：如有训练均值，显式返回；否则不返回；
+   provenance：真实论文、源码URL与版本、任何移植/参数约定；
+   initializationHash：真实初始化的哈希；
+   elapsedSeconds：实际优化耗时；stopReason：真实退出原因。
+   commonInitializationUsed：是否实际使用info.U0/V0；默认false。
+   initializationSeconds：该方法自身初始化耗时。
+ 不允许利用info以外的probe文件选参数。纯开发潜在真值不能进入最终评估拟合。
+
+将函数与原作者依赖加入MATLAB path，在NB_USER_CONFIG中设置：
+ O.externalAdapter='MY_BA_ADAPTER';
+ O.externalName='BA2DPCA';
+ O.externalDependencies={'H:\source\original_BA2DPCA.m'}; % 列出全部包外实现依赖
+ 设置新outputRoot并重新START_HERE。适配器源码哈希进入冻结记录。
+ 原始第三方依赖应固定版本；本包不会自动获取未核验的程序。
